@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Affitti Studenti Padova</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+<div id="theme-toggle">🌓</div>
+<div id="map"></div>
+<div id="no-houses-message">😕 Nessuna casa trovata con i filtri selezionati.</div>
+<div id="card-container">
+    <div id="house-card" class="card">
+        <img id="house-img" src="" alt="Casa" />
+        <h2 id="house-title"></h2>
+        <p id="house-address"></p>
+        <p id="house-price"></p>
+        <div class="buttons">
+            <button class="btn" id="reject-btn">Scarta</button>
+            <button class="btn" id="save-btn">Salva</button>
+        </div>
+    </div>
+</div>
+<div id="toast">✅ Casa salvata nei preferiti!</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
